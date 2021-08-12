@@ -16,11 +16,6 @@ int main()
    }
    printf("greatest common divisor : %d",num1);
    return 0;
-   
-   
-   
-   
-    
   
 }
 
