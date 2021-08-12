@@ -18,21 +18,3 @@ int main()
    return 0;
   
 }
-
-   
-   
-   
-   
-    //for(int i=2 ; i < num1 && i < num2 ;i++)
-    //while(num2 != 0)
-    //{
-       // if(num1 / i == 0 && num2 / i ==0)
-       // {
-        //    i*i =A;
-       //     i=1;
-      //  }
-   // }
-   // printf("%d",A);
-   // return 0;
-    
-//}
