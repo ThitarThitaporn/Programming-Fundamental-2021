@@ -22,4 +22,5 @@ int main()
     {
         printf("THe maximam is %d", num3 + num1);
     }
+    return 0;
 }
