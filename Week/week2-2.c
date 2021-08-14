@@ -1,26 +1,32 @@
 #include <stdio.h>
 int main()
 {
-    int num1, num2, num3;
+    int num[3], max, min;
 
-    printf("Enter number1 :");
-    scanf("%d", &num1);
-    printf("Enter number2 :");
-    scanf("%d", &num2);
-    printf("Enter number3 :");
-    scanf("%d", &num3);
+    for (int i = 0; i <= 2; i++)
+    {
+        printf("Enter number.%d : ", i + 1);
+        scanf("%d", &num[i]);
+    }
 
-    if ((num1 >= num2) && (num2 >= num3))
+    for (int i = 0; i <= 2; i++)
     {
-        printf("The maximam is %d", num1 + num2);
+
+        if (i == 0)
+        {
+            max = num[i];
+            min = num[i];
+        }
+        else if (num[i] > max)
+        {
+            max = num[i];
+        }
+        else if (num[i] < min)
+        {
+            min = num[i];
+        }
     }
-    if ((num2 >= num3) && (num3 >= num1))
-    {
-        printf("The maximam is %d", num2 + num3);
-    }
-    if ((num3 >= num1) && (num1 >= num2))
-    {
-        printf("THe maximam is %d", num3 + num1);
-    }
+    printf("The maximam is %d", (num[0] + num[1] + num[2]) - min);
+
     return 0;
 }
