@@ -9,18 +9,18 @@ int main()
     scanf("%d", &num2);
     printf("Enter number3 :");
     scanf("%d", &num3);
-    
-    if (num1 + num2 > num2 + num3)
+
+    if ((num1 + num2) > (num2 + num3)&&(num1 + num2)>(num3+num1))
     {
         printf("The maximam %d", num1 + num2);
     }
-    else if (num2 + num3 > num3 + num1)
+    else if ((num2 + num3) > (num1 + num2)&&(num2+num3)>(num3+num1))
     {
         printf("The maximam %d", num2 + num3);
     }
     else
     {
-        printf("The maximam is%d", num3 + num1);
+        printf("The maximam is %d", num3 + num1);
     }
     return 0;
 }
