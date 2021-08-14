@@ -12,11 +12,11 @@ int main()
 
     if ((num1 + num2) > (num2 + num3)&&(num1 + num2)>(num3+num1))
     {
-        printf("The maximam %d", num1 + num2);
+        printf("The maximam is %d", num1 + num2);
     }
     else if ((num2 + num3) > (num1 + num2)&&(num2+num3)>(num3+num1))
     {
-        printf("The maximam %d", num2 + num3);
+        printf("The maximam is %d", num2 + num3);
     }
     else
     {
