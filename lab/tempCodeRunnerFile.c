@@ -1,17 +1,18 @@
-#include <stdio.h>
-int main()
-{
-    int num;
-    scanf("%d", &num);
-    for (int i = 1; i < num; i++)
-    {
-        if (num % i == 0)
+#include<stdio.h>
+int main(){
+    long int b=0,n;
+    scanf("%ld",&n);
+    while(n>9){
+        while(n>9)
         {
-            printf("%d  ", i);
-            
+            b+=n%10;
+            n/=10;
         }
+        b+=n%10;
+        printf("%ld\n",b);
+        n=b;
+        b=0;
         
-    } 
-    printf(" = %d", num);
-    return 0;
+    }
+
 }
