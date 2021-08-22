@@ -2,7 +2,7 @@
 
 int main()
 {
-    float num[5], sum = 0;
+    float num[5], sum = 0; 
     printf("Enter height\n");
 
     for (int i = 0; i <= 4; i++)
