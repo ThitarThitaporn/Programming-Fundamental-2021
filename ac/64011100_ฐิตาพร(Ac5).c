@@ -7,22 +7,21 @@ int main()
 
 	ptr = str;
 	scanf("%s", str);
-	printf("Input : %s\n",str);
+	printf("Input : %s\n", str);
 	printf("Output : ");
 	while (*ptr != '\0')
 
 	{
-			if (*ptr != *(ptr+1))
-			{
-				printf("%c", *ptr);
-				ptr++;
-			}
+		if (*ptr != *(ptr + 1))
+		{
+			printf("%c", *ptr);
+			ptr++;
+		}
 
-			else
-			{
-				ptr++;
-			}
-		
+		else
+		{
+			ptr++;
+		}
 	}
 	return 0;
 }
