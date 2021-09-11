@@ -5,12 +5,13 @@ int main(){
     int num;
      scanf_s("%d",&num);
      ExchCard(num) ;  
+     return 0;
 }
 
 int ExchCard (int i)
 {
     i = i*(i-1);
     printf("%d",i);
-    return 0;
+    
 
 }
