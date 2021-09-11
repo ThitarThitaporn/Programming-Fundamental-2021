@@ -38,13 +38,11 @@ void erase_ship(int x, int y)
 	setcolor(0, 0);
 	printf("       ");
 }
-
 void draw_bullet(int x, int y) 
 {
 	gotoxy(x, y);
 	setcolor(2, 2);
-	printf("|");
-	
+	printf("|");	
 }
 void erase_bullet(int x, int y) 
 {
@@ -52,7 +50,6 @@ void erase_bullet(int x, int y)
 	setcolor(0, 0);
 	printf(" ");
 }
-
 
 int main()
 {
@@ -105,10 +102,7 @@ int main()
 				status[i] = 0;
 				erase_bullet(bx[i], by[i]);
 			}
-
 		}
-
-
 		Sleep(100);
 	} while (ch != 'x');
 	return 0;
