@@ -10,7 +10,7 @@ int main()
     m= (n/60)%60;
     s = n % 60;
     printf("Output\n");
-   printf("%02d:%02d:%02d",h,m,s);
+   printf("%d:%02d:%02d",h,m,s);
 
     return 0;
 }

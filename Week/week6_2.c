@@ -1,7 +1,7 @@
 #include<stdio.h>
 int hour(int n,int h){
      h = n / 3600;
-     printf("%02d:",h);
+     printf("%d:",h);
      
 }
 
