@@ -10,22 +10,7 @@ int main()
     m= (n/60)%60;
     s = n % 60;
     printf("Output\n");
-    if (m >= 0 && m <= 9)
-    {
-        printf("%d:%d%d:", h, m0, m);
-        if (s >= 0 && s <= 9)
-        {
-            printf("%d%d", s0, s);
-        }
-        else
-        {
-            printf("%d", s);
-        }
-    }
-    else
-    {
-        printf("%d:%d:%d", h, m, s);
-    }
+   printf("%02d:%02d:%02d",h,m,s);
 
     return 0;
 }
