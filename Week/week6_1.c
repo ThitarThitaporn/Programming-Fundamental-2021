@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int s, m, h;
+    int n,s, m, h;
     int m0 = 0, s0 = 0;
 
     printf("Input\n");
-    scanf("%d", &s);
-    h = s / 3600;
-    m = (s - (h * 3600)) / 60;
-    s = s % 60;
+    scanf("%d", &n);
+    h = n / 3600;
+    m= (n/60)%60;
+    s = n % 60;
     printf("Output\n");
     if (m >= 0 && m <= 9)
     {

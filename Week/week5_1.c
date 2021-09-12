@@ -8,6 +8,7 @@ int main(){
      return 0;
 }
 
+
 int ExchCard (int i)
 {
     i = i*(i-1);
