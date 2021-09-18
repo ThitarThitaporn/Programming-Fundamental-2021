@@ -22,6 +22,7 @@ int main()
             scanf("%d", &b[i][j]);
         }
     }
+    printf("Result :\n");
     for (int i = 1; i <= m; i++)
     {
         for (int j = 1; j <= n; j++)
