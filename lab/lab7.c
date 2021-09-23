@@ -14,7 +14,7 @@ void gotoxy(int x, int y) //direction of movement
 	COORD c = { x, y };
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
 }
-void setcursor(bool visible) //set console
+void setcursor(boolean visible) //set console
 {
 	HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE); //set console
 	CONSOLE_CURSOR_INFO lpCursor; //like define varianle
