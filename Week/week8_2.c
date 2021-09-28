@@ -5,9 +5,9 @@ int main()
     FILE *fp;
     char in[100];
     printf("Input: ");
-    scanf("%[^\n]", in); // รับที่อยู่ file
-     FILE *inputFile; fp  = fopen(in, "r"); // อ่าน file จากที่อยู่ที่รับเข้ามา
-    if (fp==(FILE*) NULL) // ถ้าไม่มี file อยู่ inputFile จะเท่ากับ NULL
+    scanf("%[^\n]", in); 
+     FILE *inputFile; fp  = fopen(in, "r"); 
+    if (fp==(FILE*) NULL) 
     {
         printf("There is no such file.");
         return 0;
@@ -15,7 +15,7 @@ int main()
 
     char out[100];
     printf("Output: ");
-    scanf(" %[^\n]", out); // รับที่อยู่ file สำหรับ copy ใส่
+    scanf(" %[^\n]", out); 
     FILE *outFile = fopen(out, "w");
     
     char ch;
