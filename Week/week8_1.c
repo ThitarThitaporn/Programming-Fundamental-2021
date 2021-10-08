@@ -1,12 +1,12 @@
-// จงเขียนโปรแกรม Copy ไฟล์ข้อมูลโดยให้นักศึกษาป้อนข้อมูลของไฟล์ต้นทาง และข้อมูลไฟล์ปลายทาง (Level 4)
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main()
 {
     char in[100];
     printf("Input: ");
-    scanf("%[^\n]", in); 
-    FILE *inputFile = fopen(in, "r"); 
-    if (inputFile == NULL) 
+    scanf("%[^\n]", in); // รับที่อยู่ file
+    FILE* inputFile = fopen(in, "r"); // อ่าน file จากที่อยู่ที่รับเข้ามา
+    if (inputFile == NULL) // ถ้าไม่มี file
     {
         printf("There is no such file.");
         return 0;
@@ -14,15 +14,15 @@ int main()
 
     char out[100];
     printf("Output: ");
-    scanf(" %[^\n]", out); 
-    FILE *outFile = fopen(out, "w");
-    
+    scanf(" %[^\n]", out); // รับที่อยู่ file สำหรับ copy ใส่
+    FILE* outFile = fopen(out, "w");
+
     char ch;
-    while ((ch = fgetc(inputFile)) != EOF)
+    while ((ch = fgetc(inputFile)) != EOF)//EOF is End Of File
     {
         fprintf(outFile, "%c", ch);
     }
 
-    fcloseall();
+    _fcloseall();
     return 0;
 }
