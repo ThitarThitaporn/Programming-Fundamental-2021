@@ -5,7 +5,16 @@ int main()
     float sqrt(float num);
     printf("Enter number : ");
     scanf("%f" , &num);
-    printf("Ans. = %f",sqrt(num));
+    
+    if (num > 0)
+        printf("Ans. = %f", sqrt(num));
+
+    if (num == 0)
+        printf("Ans. = 0");
+
+    if (num < 0)
+        printf("Number must be Positive");
+
     
     return 0;
 }
